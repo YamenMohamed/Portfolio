@@ -13,7 +13,8 @@ export class Tag {
     static readonly MYSQL = new Tag('MySQL', 'brown');
     static readonly STREAMLIT = new Tag('Streamlit', 'Grey');
     static readonly GO = new Tag('Go', 'teal');
-
+    static readonly DOCKER = new Tag('Docker', 'navy');
+    static readonly RPC = new Tag('RPC', 'lightblue');
     private constructor(private readonly key: string,public readonly color: string) {
 
      }
