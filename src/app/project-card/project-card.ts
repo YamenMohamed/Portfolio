@@ -1,4 +1,8 @@
 import { Component, Input } from '@angular/core';
+import { Project } from '../models/Project';
+import { Tag } from '../models/Tags';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-project-card',
@@ -7,5 +11,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './project-card.css',
 })
 export class ProjectCard {
-@Input() project_name: string = '';
+
+  @Input() project = {} as Project;
+
 }
